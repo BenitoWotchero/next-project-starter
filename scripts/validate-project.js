@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
 /**
- * 🔍 Project Structure Validation
- * Prüft Ordnung und Vollständigkeit der Projekt-Struktur
+ * 🏗️ Project Structure Validator
+ * Prüft ob alle notwendigen Dateien und Ordner vorhanden sind
  */
 
-const fs = require('fs');
-const path = require('path');
-const chalk = require('chalk');
+import fs from 'fs';
+import path from 'path';
+import chalk from 'chalk';
 
 console.log(chalk.blue.bold('\n🔍 Projekt-Struktur Validation\n'));
 

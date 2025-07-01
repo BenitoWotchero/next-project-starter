@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 
 /**
- * 🔍 Template Update Checker
+ * 🔄 Template Update Checker
  * 
  * Prüft ob neue Template-Updates verfügbar sind und zeigt diese an.
  * Basis-Implementation für das Template Update System.
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 // Template-Konfiguration (später aus externer Quelle)
 const TEMPLATE_CONFIG = {
@@ -207,12 +208,13 @@ function main() {
   process.exit(criticalUpdates > 0 ? 1 : 0);
 }
 
-// Script ausführen wenn direkt aufgerufen
-if (require.main === module) {
+// Script ausführen wenn direkt aufgerufen  
+const __filename = fileURLToPath(import.meta.url);
+if (process.argv[1] === __filename) {
   main();
 }
 
-module.exports = {
+export {
   getCurrentTemplateVersion,
   checkAvailableUpdates,
   compareVersions

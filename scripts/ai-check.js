@@ -5,9 +5,9 @@
  * Prüft Dokumentations-Referenzen und Verlinkungen
  */
 
-const fs = require('fs');
-const path = require('path');
-const chalk = require('chalk');
+import fs from 'fs';
+import path from 'path';
+import chalk from 'chalk';
 
 console.log(chalk.blue.bold('\n🤖 AI Documentation Check\n'));
 

@@ -2,6 +2,25 @@
 
 > **Entwicklungshistorie des next-project-starter Templates**
 
+## [1.0.3] - 2025-01-07
+
+### 🔧 Updated
+- **Dependencies aktualisiert** → Next.js auf 15.3.4, React 18.2.0, Chalk 5.3.0
+- **Package Name korrigiert** → Von "my-nextjs-project" zu "next-project-starter"
+- **TypeScript & Tools** → Aktualisierte @types/react, @types/node, ESLint auf neueste Versionen
+- **LICENSE entfernt** → Für Template-Neutralität
+
+---
+
+## [1.0.2] - 2025-01-07
+
+### 🐛 Fixed
+- **Chalk ES Modules Bug** → Scripts von CommonJS (`require()`) auf ES Modules (`import`) umgestellt
+- **package.json ES Module Support** → `"type": "module"` hinzugefügt für Chalk v5+ Kompatibilität
+- **Script Compatibility** → Alle Scripts (ai-check.js, setup-project.js, validate-project.js) funktionieren jetzt korrekt
+
+---
+
 ## [1.0.1] - 2025-01-07
 
 ### ✨ Added
@@ -68,4 +87,4 @@
 
 **📅 Letzte Aktualisierung:** 2025-01-07  
 **🏗️ Template-Maintainer:** [Team/Person]  
-**📊 Aktuelle Template-Version:** 1.0.1 
+**📊 Aktuelle Template-Version:** 1.0.3 

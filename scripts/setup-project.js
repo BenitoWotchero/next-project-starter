@@ -5,11 +5,11 @@
  * Interaktives Setup mit KI-Interview + Next.js Installation
  */
 
-const fs = require('fs');
-const path = require('path');
-const { execSync } = require('child_process');
-const inquirer = require('inquirer');
-const chalk = require('chalk');
+import fs from 'fs';
+import path from 'path';
+import { execSync } from 'child_process';
+import inquirer from 'inquirer';
+import chalk from 'chalk';
 
 console.log(chalk.blue.bold('\n🚀 Next.js Project Setup - KI-Interview\n'));
 
